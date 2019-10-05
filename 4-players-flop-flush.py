@@ -21,7 +21,7 @@ def main():
             print('4 flush found:')
             print(flop)
             print(hands)
-            print(flush4 + 'found of' + total)
+            print(str(flush4) + 'found of' + str(total))
         total+=1
 
     print("Results: Number of times 4 players flopped a flush 9-handed:") 
