@@ -9,16 +9,19 @@ def main():
 
     flush4 = 0
     total = 0
+
+    print("Beginning:")
     
-    for i in range(0, 1000000000):
+    for i in range(0, 100000000):
         cards = list(range(0,51))
         hands = deal(cards)
         flop = dealFlop(cards)
         if is4flush(hands, flop):
             flush4+=1
             print('4 flush found:')
-            print(hands)
             print(flop)
+            print(hands)
+            print(flush4 + 'found of' + total)
         total+=1
 
     print("Results: Number of times 4 players flopped a flush 9-handed:") 
